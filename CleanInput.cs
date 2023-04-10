@@ -120,5 +120,66 @@ namespace CleanInput
       
       return input;
     }
+    
+    
+    public static string This(string s)
+    {
+      if ( string.IsNullOrEmpty(s) ) { return ""; }
+      
+      
+      return
+      s.Replace(" " , "")
+       .Replace("\n", "")
+       .Replace("\r", "")
+       .Replace("\f", "")
+       .Replace("\t", "")
+       .Replace("\v", "")
+       .Replace("\b", "")
+       .Replace("\a", "")
+       .Replace("1" , "")
+       .Replace("2" , "")
+       .Replace("3" , "")
+       .Replace("4" , "")
+       .Replace("5" , "")
+       .Replace("6" , "")
+       .Replace("7" , "")
+       .Replace("8" , "")
+       .Replace("9" , "")
+       .Replace("0" , "")
+       .Replace("!" , "")
+       .Replace("@" , "")
+       .Replace("#" , "")
+       .Replace("$" , "")
+       .Replace("%" , "")
+       .Replace("^" , "")
+       .Replace("&" , "")
+       .Replace("*" , "")
+       .Replace("(" , "")
+       .Replace(")" , "")
+       .Replace("-" , "")
+       .Replace("_" , "")
+       .Replace("=" , "")
+       .Replace("+" , "")
+       .Replace("[" , "")
+       .Replace("]" , "")
+       .Replace("{" , "")
+       .Replace("}" , "")
+       .Replace("\\", "")
+       .Replace("|" , "")
+       .Replace(";" , "")
+       .Replace(":" , "")
+       .Replace("\'", "")
+       .Replace("\"", "")
+       .Replace("/" , "")
+       .Replace("//", "")
+       .Replace("?" , "")
+       .Replace("." , "")
+       .Replace(">" , "")
+       .Replace("," , "")
+       .Replace("<" , "")
+       .Replace("`" , "")
+       .Replace("~" , "")
+       .Trim();
+    }
   }
 }
